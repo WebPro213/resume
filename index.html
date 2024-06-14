@@ -3,122 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafsa Siddiqui Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 14px 20px;
-        }
-        .navbar a {
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .navbar .profile-link {
-            margin-left: auto;
-        }
-        .home, .services, .portfolio, .contact {
-            padding: 20px;
-        }
-        .home {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .home-text {
-            max-width: 50%;
-        }
-        .home img {
-            border-radius: 50%;
-            max-width: 500px;
-            height: auto;
-        }
-        .bold {
-            font-weight: bold;
-        }
-        .contact-form {
-            width: 50%;
-            margin: auto;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            box-sizing: border-box;
-        }
-        .contact-form input[type="submit"] {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .contact-form input[type="submit"]:hover {
-            background-color: #555;
-        }
-    </style>
+    <title>Hafsa Siddiqui's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="https://www.linkedin.com/in/hafsa-siddiqui-web-developer-a26439304" class="profile-link">LinkedIn</a>
-    </div>
-
-    <div id="home" class="home">
-        <div class="home-text">
-            <p class="bold">WELCOME TO MY PORTFOLIO</p>
-            <p class="bold">Hi I'm Hafsa Siddiqui</p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://www.linkedin.com/in/hafsa-siddiqui-web-developer-a26439304" class="linkedin">LinkedIn</a>
+    </nav>
+    
+    <section id="home">
+        <div class="home-left">
+            <p><strong>WELCOME TO MY PORTFOLIO</strong></p>
+            <p><strong>Hi I'm Hafsa Siddiqui</strong></p>
             <p>Frontend Developer</p>
-            <p>Email: <a href="mailto:developmentw82@gmail.com">developmentw82@gmail.com</a></p>
-            <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61560343511663">My Facebook Profile</a></p>
+            <a href="mailto:developmentw82@gmail.com">developmentw82@gmail.com</a>
+            <a href="https://www.facebook.com/profile.php?id=61560343511663">Facebook Profile</a>
         </div>
-        <div class="home-img">
+        <div class="home-right">
             <img src="https://img.freepik.com/premium-photo/working-girl-office-work-animated-girl-working-laptop_982269-329.jpg" alt="Girl working on laptop">
         </div>
-    </div>
-
-    <div id="services" class="services">
-        <h2 class="bold">My Services</h2>
+    </section>
+    
+    <section id="services">
+        <h2><strong>My Services</strong></h2>
         <p>WHAT I WILL DO FOR YOU</p>
-        <p><span class="bold">Web Design</span><br>Creative design on your website. Design experience 2+ years using those technology figma & photoshop ai power tools such as canva etc.</p>
-        <p><span class="bold">Web Development</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
-    </div>
-
-    <div id="portfolio" class="portfolio">
-        <p><img src="https://thumbs.dreamstime.com/z/modern-website-web-design-company-presented-laptop-computer-work-desk-blue-wall-background-194387597.jpg" alt="Web Design" style="width: 20px; vertical-align: middle;"> Web Design<br>Innovative, web design using html css & JavaScript fully responsive website.</p>
-        <p><img src="https://c8.alamy.com/comp/FBXBM9/web-development-concept-on-laptop-screen-FBXBM9.jpg" alt="Web Development" style="width: 20px; vertical-align: middle;"> Web Development<br>Design website firstly, And then, development website user friendly using php connect database.</p>
-    </div>
-
-    <div id="contact" class="contact">
-        <form class="contact-form" action="mailto:developmentw82@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="first-name" placeholder="First Name" required>
-            <input type="text" name="last-name" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" placeholder="Message" rows="4" required></textarea>
-            <input type="submit" value="Send">
+        <div class="service">
+            <h3><strong>Web Design</strong></h3>
+            <p>Creative design on your website. Design experience 2+ years using those technology figma & photoshop ai power tools such as canva etc.</p>
+        </div>
+        <div class="service">
+            <h3><strong>Web Development</strong></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="portfolio-item">
+            <img src="https://thumbs.dreamstime.com/z/modern-website-web-design-company-presented-laptop-computer-work-desk-blue-wall-background-194387597.jpg" alt="Web Design" class="portfolio-img">
+            <p>Web Design: Innovative, web design using html css & JavaScript fully responsive website.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://c8.alamy.com/comp/FBXBM9/web-development-concept-on-laptop-screen-FBXBM9.jpg" alt="Web Development" class="portfolio-img">
+            <p>Web Development: Design website firstly, And then, development website user friendly using php connect database.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:developmentw82@gmail.com" method="post" enctype="text/plain">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+            
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject..">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            
+            <input type="submit" value="Submit">
         </form>
-    </div>
-
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
