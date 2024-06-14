@@ -1,31 +1,39 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-.navbar a {
-    color: #fff;
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
 }
 
-.navbar-left a:hover, .navbar-right a:hover {
-    text-decoration: underline;
+.linkedin {
+    color: white;
+    text-decoration: none;
 }
 
 section {
@@ -36,58 +44,48 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
 }
 
-.home-content {
-    flex: 1;
+.home-left {
     max-width: 50%;
 }
 
-.home-image img {
+.home-right img {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
+    border-radius: 2500px;
 }
 
 .service, .portfolio-item {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
-.portfolio-item img {
+.portfolio-img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
 
 form {
-    max-width: 50%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 form input, form textarea {
+    margin-bottom: 10px;
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-form button {
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
+form input[type="submit"] {
     background-color: #333;
-    color: #fff;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-form button:hover {
+form input[type="submit"]:hover {
     background-color: #555;
 }
