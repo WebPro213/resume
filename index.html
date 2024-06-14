@@ -3,77 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafsa Siddiqui Portfolio</title>
+    <title>Hafsa Siddiqui's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#home">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <a href="https://www.linkedin.com/in/hafsa-siddiqui-web-developer-a26439304" target="_blank">LinkedIn</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="navbar-right">
+                <a href="https://www.linkedin.com/in/hafsa-siddiqui-web-developer-a26439304" target="_blank">LinkedIn</a>
+            </div>
+        </nav>
+    </header>
 
-    <section id="home" class="section">
-        <div class="content">
+    <section id="home">
+        <div class="home-content">
             <h1><b>WELCOME TO MY PORTFOLIO</b></h1>
-            <h2><b>Hi, I'm Hafsa Siddiqui</b></h2>
+            <h2><b>Hi I'm Hafsa Siddiqui</b></h2>
             <h3>Frontend Developer</h3>
-            <p><a href="mailto:developmentw82@gmail.com">developmentw82@gmail.com</a></p>
-            <p><a href="https://www.facebook.com/profile.php?id=61560343511663" target="_blank">Facebook Profile</a></p>
+            <p>Email: <a href="mailto:developmentw82@gmail.com">developmentw82@gmail.com</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61560343511663" target="_blank">Profile Link</a></p>
         </div>
-        <div class="image-container">
-            <img src="https://img.freepik.com/premium-photo/working-girl-office-work-animated-girl-working-laptop_982269-329.jpg" alt="Girl working on laptop">
+        <div class="home-image">
+            <img src="https://img.freepik.com/premium-photo/working-girl-office-work-animated-girl-working-laptop_982269-329.jpg" alt="Animated girl working on laptop">
         </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="services">
         <h2><b>My Services</b></h2>
-        <p>WHAT I WILL DO FOR YOU</p>
+        <h3>WHAT I WILL DO FOR YOU</h3>
         <div class="service">
-            <h3><b>Web Design</b></h3>
-            <p>Creative design on your website. Design experience 2+ years using those technology figma & photoshop ai power tools such as canva etc.</p>
+            <h4><b>Web Design</b></h4>
+            <p>Creative design on your website. Design experience 2+ years using technologies like Figma, Photoshop, and AI-powered tools such as Canva, etc.</p>
         </div>
         <div class="service">
-            <h3><b>Web Development</b></h3>
+            <h4><b>Web Development</b></h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <section id="portfolio">
         <div class="portfolio-item">
             <img src="https://thumbs.dreamstime.com/z/modern-website-web-design-company-presented-laptop-computer-work-desk-blue-wall-background-194387597.jpg" alt="Web Design">
-            <h3>Web Design</h3>
-            <p>Innovative, web design using HTML, CSS & JavaScript. Fully responsive website.</p>
+            <h4>Web Design</h4>
+            <p>Innovative, web design using HTML, CSS & JavaScript. Fully responsive websites.</p>
         </div>
         <div class="portfolio-item">
             <img src="https://c8.alamy.com/comp/FBXBM9/web-development-concept-on-laptop-screen-FBXBM9.jpg" alt="Web Development">
-            <h3>Web Development</h3>
-            <p>Design website firstly, and then, develop website user-friendly using PHP to connect the database.</p>
+            <h4>Web Development</h4>
+            <p>Design the website first, and then develop user-friendly websites using PHP to connect to databases.</p>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact">
         <h2>Contact Me</h2>
         <form action="mailto:developmentw82@gmail.com" method="post" enctype="text/plain">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required>
-            
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required>
-            
-            <label for="email">Email</label>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="subject">Subject</label>
+
+            <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
             <button type="submit">Send</button>
         </form>
     </section>
